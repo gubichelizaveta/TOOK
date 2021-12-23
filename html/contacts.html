@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title> CONTACTS </title>
+      <meta charset = "utf-8">
+      <link rel="stylesheet" type="text/css" href="D:/курсач/css/contacts.css">
+      <link rel="stylesheet" type="text/css" href="D:/курсач/css/form.css">
+      <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cormorant+Garamond:wght@300&family=Kings&family=Mochiy+Pop+P+One&family=Montserrat&family=Open+Sans+Condensed:wght@300&family=Oswald:wght@400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+      <div class="container"> 
+
+      <header>
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu__box">
+            <li><a class="menu__item" href="D:/курсач/home.html">Главная</a></li>
+            <li><a class="menu__item" href="D:/курсач/html/menu.html">Меню</a></li>
+            <li><a class="menu__item" href="D:/курсач/html/ourstory.html">О нас</a></li>
+            <li><a class="menu__item" href="D:/курсач/html/contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div id="name"><a  class = "atook" href="D:/курсач/home.html">TOOK coffee</a></div>
+        <div id="contacts"><a class="aatook" href="D:/курсач/html/contacts.html">Contacts</a></div>
+        <div id="menu"><a class="aaatook" href="D:/курсач/html/menu.html">See Our Menu</a></div>
+        <img id="imgcoffee" src="https://img.icons8.com/nolan/64/kawaii-coffee.png"/>
+
+        <div id="imgeggs" ><img src="https://img.icons8.com/ios/50/000000/sunny-side-up-eggs.png"/> </div>
+        <a href="https://twitter.com/?lang=ru"><img id="twitter" src="D:/курсач/images/twitter.png" /></a>
+        <a href="https://www.instagram.com/took_coffee/"><img id="inst" src="D:/курсач/images/instagram.png" ></a>
+        <a href="https://m.facebook.com/Took-cafe-bar-1053123154832678/"> <img id="facebook" src="D:/курсач/images/facebook.png"></a>
+      </header>
+
+      <img id = "address" src="D:/курсач/images/address.png">
+      <img id = "phone" src="D:/курсач/images/phone.png">
+      <img id = "email" src="D:/курсач/images/email.png">
+      <img id = "hour" src="D:/курсач/images/hour.png">
+   <div id="contactsinfo">
+    <h5 id="info1">Минск, ул. Московская,7 / Минск, ул.Макаёнка,12В </br>Минск, ул.Братская,16 / Минск, пр.Дзержинского,80</h5><h4><br></h4>
+    <h4 id="info2">8029 651-36-98</h4><h4><br><br></h4>
+    <h4 id="info3">info@took_coffee</h4><h4><br></h4>
+    <h5 id="info4">пн-пт 7 - 23.00 <br> сб-вс 11.00-23.00 </h5><h4><br></h4>
+   </div>
+
+   <div id="nameicons">
+     <p id="icons1">Адрес</p><br><br>
+     <p id="icons2">Телефон</p><br><br>
+     <p id="icons3">E-mail</p><br><br>
+     <p id="icons4">Режим работы</p><br><br>
+   </div>
+
+      <div id="map">
+        <script  type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1dbddf20a507ab65690b1cd0a86f0723b6ab10f878d7f20ac82b06245fb167bd&amp;width=440&amp;height=419&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      <div id="map1200">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1dbddf20a507ab65690b1cd0a86f0723b6ab10f878d7f20ac82b06245fb167bd&amp;width=1200&amp;height=628&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      <div id="map1000">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1dbddf20a507ab65690b1cd0a86f0723b6ab10f878d7f20ac82b06245fb167bd&amp;width=1000&amp;height=628&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      <div id="map520">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1dbddf20a507ab65690b1cd0a86f0723b6ab10f878d7f20ac82b06245fb167bd&amp;width=520&amp;height=475&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+  </div>
+  <div id="upbutton"></div>
+
+  <!--ФОРМА-->
+  <div class="wrapper">
+    <div class="form">
+      <form action="#" id="form" class="form__body">
+        <h1 class="form__title">Задать вопрос</h1>
+        <p class="vopros">Мы с радостью ответим на все Ваши вопросы о нашем кофейне.<br> Ответ будет направлен на электронную почту,<br> указанную при заполнении формы.
+          Ждем Вас!</p>
+        <div class="form__item">
+          <label for="formName" class="form__label">Ваше Имя*:</label>
+          <input id="formName" type="text" name="name" class="form__input _req ">
+        </div>
+
+        <div class="form__item">
+          <label for="formEmail" class="form__label">E-mail*:</label>
+          <input id="formEmail" type="text" name="email" class="form__input _req _email ">
+        </div>
+
+        <div class="form__item">
+          <label for="formPhone" class="form__label">Телефон:</label>
+          <input id="formPhone" type="text" name="phone" class="form__input" >
+        </div>
+
+        <div class="form__item">
+          <div class="form__lable">Я даю согласие на получение информационных рассылок</div>
+          <div class="options">
+            <div class="options__item">
+              <input id="formYes" checked type="radio" value="yes" name="yesorno" class="options__input">
+              <label for="formYes" class="options__label"><span>Да</span></label> 
+            </div>
+            <div class="options__item">
+              <input id="formNo" type="radio" value="no" name="yesorno" class="options__input">
+              <label for="formNo" class="options__label"><span>Нет</span></label> 
+            </div>
+          </div>
+        </div>
+
+        <div class="form__item">
+          <label for="forMessage" class="form__label">Сообщение*:</label>
+          <textarea name="message" id="formMessage" class="form__input _req"></textarea>
+        </div>
+
+        <div class="form__item">
+          <div class="checkbox">
+            <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+            <label for="formAgreement" class="checkbox__label"><span>Я даю согласие на обработку персональных данных в соответствии с <a href="">Условиями</a> </span></label>
+          </div>
+        </div>
+
+        <button type="submit" class="form__button">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-git.min.js"></script>
+  <script src="/assets/js/jquery-3.5.1.min.js"></script>
+  <script src="D:/курсач/js/formjs.js"></script>
+  <script src="D:/курсач/js/upbutton.js"></script>
+     </body>
+</html>
