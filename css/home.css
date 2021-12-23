@@ -1,0 +1,1071 @@
+#name :hover{
+  color: rgb(56, 6, 194);
+  border-bottom: 1px double rgb(56, 6, 194);
+}
+#contacts :hover{
+  color: rgb(56, 6, 194);
+  border-bottom: 1px double rgb(56, 6, 194);
+}
+#menu :hover{
+  color: rgb(56, 6, 194);
+  border-bottom: 1px double rgb(56, 6, 194);
+}
+@media screen and (max-width:1920px) and (min-width:1500px)
+ {
+  #form{
+    margin-left:65%;
+    margin-top: -12%;
+  }
+  #submitB{ 
+    border:none; 
+    padding:0; 
+    margin:0; 
+    font-size:20px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    font-family: 'Merriweather', serif; 
+    color:black; 
+    background-color:transparent; 
+    }
+  #upbutton {
+    background: url("D:/курсач/images/upbutton.png") no-repeat top left;
+    height: 64px;
+    width: 64px;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+  }
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 37px;
+  left: 40px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 1;
+ 
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -12px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 12px;
+}
+
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 0px;
+  margin: 0;
+  padding: 60px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+  float: left;
+  display: block;
+  padding: 8px;
+  margin-right:-220px; /*Добавляем отступ у пунктов меню*/
+  margin-left: 350px;;
+  margin-top: -25px;
+  font-size: 25px;
+  font-family: Courier New, monospace;
+  color: rgb(0, 0, 0);
+  
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+/*---------------------------------------------*/
+#name{
+  margin-left: 30%;
+}
+#contacts{
+  margin-left: 88%;
+  margin-top: -3%;
+}
+
+.atook {
+  color: black;
+  font-size: 40px;
+  font-family: Bradley Hand, cursive;
+  text-decoration: none;
+  margin-left: 12%;
+}
+
+.aatook{
+  color: #616161;
+  font-size: 40px;
+  font-family: Palatino, URW Palladio L, serif;
+  font-style: italic;
+  text-decoration: none;
+}
+.aaatook{
+  text-decoration: none;
+  color: #616161;
+  font-size: 40px;
+  font-family: Palatino, URW Palladio L, serif;
+  font-style: italic;
+}
+#menu{
+  transform-origin: left;
+  transform: rotate(90deg);
+  left: 4%;
+  top: 25%;
+  position:fixed;
+}
+#imgcoffee{
+  margin-left: 50%;
+  margin-top: -35%;
+  display: none;
+}
+#imgeggs{
+  position: fixed;
+  margin-top: 36%;
+  left: 2.5%;
+  
+}
+#twitter{
+ display: none;
+}
+#inst{
+  display: none;
+}
+#facebook{
+ display: none;
+}
+#text{
+  margin-left: 125px;
+  padding-right: 20px;
+  font-size: 40px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  color: rgb(49, 49, 49);
+}
+#one{
+  margin-left: 23%;
+  position:relative;
+  z-index: 0;
+}
+#two{
+  margin-left:50%;
+  margin-top: -395px;
+  position: relative;
+  z-index: 0;
+}
+#three{
+  margin-left: 10%;
+}
+#text2{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  text-align: center;
+  font-size: 40px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+#six{
+  margin-left: 22%;
+  margin-top: 15px;
+}
+#five{
+  margin-left: 33%;
+  margin-top: -30%;
+}
+#nine{
+  margin-left: 20%;
+  margin-top: -30%;
+}
+#follow{
+  display: none;
+}
+#follow720{
+  display: none;
+}
+#followtablet{
+  display: none;
+}
+#followpc{
+  margin-top: 10%;
+  margin-left: -5%;
+}
+footer{
+ width: 100%;
+ margin-bottom: 0;
+ display: block;
+}
+#grafik{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+}
+#TookCoffee{
+  margin-left:10%;
+  margin-top: 5%;
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+}
+#openinghours{
+  margin-left: 28%;
+ margin-top: -7%;
+}
+#addressfooter{
+  margin-left: 45%;
+  margin-top: -10.5%;
+}
+.wrapper{
+  overflow: hidden;
+  min-height: 100%;
+}
+.container {
+  max-width: 1600px;
+  margin: 0px auto;
+  padding: 0px 25px;
+}
+}
+
+
+/*!!!!!!!!!!!!!!!-------АДАПТАЦИЯ---------!!!!!!!!!!!!!!!!!!!*/
+/*
+@media(max-width:1920px)
+{
+  .container{
+    max-width: 1600px;
+    margin: 0px auto;
+  }
+}
+@media(max-width:1280px)
+{
+  .container{
+    max-width: 992px;
+    margin: 0px auto;
+  }
+}*/
+@media screen and (max-width:720px)
+{
+  #form{
+    margin-left:18%;
+    margin-top: -12%;
+  }
+  #submitB{ 
+    border:none; 
+    padding:0; 
+    margin:0; 
+    font-size:20px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    font-family: 'Merriweather', serif; 
+    color:black; 
+    background-color:transparent; 
+    }
+  #upbutton {
+    background: url("D:/курсач/images/upbutton.png") no-repeat top left;
+    height: 64px;
+    width: 64px;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+  }
+  .container{
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  #menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 28px;
+    left: 4%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 1;
+   
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -12px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 10px;
+  }
+  
+  /* контейнер меню */
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: -20px;
+    right: -90px;
+    left: -35px;
+    width: 30%;
+    height: 100%;
+   
+   
+    list-style: none;
+    text-align: center;
+    background-color: black;
+    opacity: 88%;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+  /* элементы меню */
+  .menu__item {
+    float: left;
+    display: block;
+    margin-left: 5%;
+    margin-top: 100px;
+    margin-bottom: -2em;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Courier New, monospace;
+    color: white;
+    opacity: 95%;
+    text-align: center;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color:rgb(41, 40, 40);
+    
+  }
+  li :hover{
+    background-color: white;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  #name{
+    margin-left: 35%;
+  }
+  .atook{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-family: Courier, monospace;
+    font-style: italic;
+    text-decoration: none;
+    margin-left: -30%;
+  }
+  .aatook{
+    display: none;
+  }
+  .aaatook{
+    display: none;
+  }
+  #imgcoffee{
+    display: none;
+  }
+  #imgeggs{
+    display: none;
+  }
+  #twitter{
+    margin-left:75%;
+    margin-top: -50px;
+    margin-bottom: 15px;
+  }
+  #inst{
+    margin-left: 5px;
+    margin-top: -60px;
+    margin-bottom: 15px;
+  }
+  #facebook{
+    margin-left: 91%;
+    margin-top: -72px;
+    margin-bottom: 34px;
+  }
+  #text{
+    text-align: center;
+    font-size: 40px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: rgb(49, 49, 49);
+    margin-left: 25px;
+    margin-top: -5px;
+  }
+  #one{
+    margin-left: 18%;
+    position: relative;
+    z-index: 0;
+  }
+  #two{
+    margin-left: 18%;
+    margin-top: 15px;
+    position: relative;
+    z-index: 0;
+  }
+  #three{
+    margin-left: 18%;
+    margin-top: 15px;
+  }
+  #text2{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  #six{
+    margin-left: 25%;
+    margin-top: 15px;
+  }
+  #five{
+    margin-left: 22%;
+    margin-top: 15px;
+  }
+  #nine{
+    display: none;
+  }
+  /*
+  #blockforphoto{
+    margin-left: -3%;
+    width:110%;
+    background-color: #CFD8DC;
+    height: 1300px;
+    margin-top: 15%;
+  }
+  #follow{
+    text-align: center;
+    font-size: 28px;
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: bold;
+    padding-top: 10%;
+  }
+  #took_coffee{
+    text-align: center;
+    
+    margin-top: 8%;
+    font-size: 45px;
+  }
+  #subscribe{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 25px;
+    color: Salmon;
+    margin-left: 8px;
+  
+    font-family: 'Dongle', sans-serif;
+  }
+  #subscribe2{
+    text-align: center;
+    font-size: 60px;
+    color: Salmon;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: -78px;
+    font-family: 'Dongle', sans-serif;
+  }
+  */
+  #grafik{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  #open{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 15%;
+    font-size: 45px;
+  }
+  #followtablet{
+    display: none;
+  }
+  #follow720{
+    display: none;
+  }
+  #followpc{
+    display: none;
+  }
+  #TookCoffee{
+    text-align: center;
+    margin-bottom: 10%;
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+  }
+  #addressfooter{
+    text-align: center;
+    margin-top: 15%;
+  }
+}
+@media screen and (max-width:1500px) and (min-width:1200px)
+{
+  #form{
+    margin-left:75%;
+    margin-top: -15%;
+  }
+  #submitB{ 
+    border:none; 
+    padding:0; 
+    margin:0; 
+    font-size:20px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    font-family: 'Merriweather', serif; 
+    color:black; 
+    background-color:transparent; 
+    }
+  #upbutton {
+    background: url("D:/курсач/images/upbutton.png") no-repeat top left;
+    height: 64px;
+    width: 64px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+  }
+  .container {
+    margin:0 auto;
+    max-width: 1200px;
+    
+  }
+  /* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 37px;
+  left: 40px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 1;
+ 
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -12px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 12px;
+}
+
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 0px;
+  margin: 0;
+  padding: 50px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+  float: left;
+  display: block;
+  padding: 5px;
+  margin-right:-10px; /*Добавляем отступ у пунктов меню*/
+  margin-left: 90px;;
+  margin-top: -25px;
+  font-size: 25px;
+  font-family: Courier New, monospace;
+  color: rgb(0, 0, 0);
+  
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+/*---------------------------------------------*/
+#name{
+  margin-left: 10%;
+}
+#contacts{
+  margin-left: 85%;
+  margin-top: -4%;
+}
+
+.atook {
+  color: black;
+  font-size: 40px;
+  font-family: Bradley Hand, cursive;
+  text-decoration: none;
+  margin-left: 12%;
+}
+
+.aatook{
+  color: #616161;
+  font-size: 40px;
+  font-family: Palatino, URW Palladio L, serif;
+  font-style: italic;
+  text-decoration: none;
+}
+.aaatook{
+  text-decoration: none;
+  color: #616161;
+  font-size: 40px;
+  font-family: Palatino, URW Palladio L, serif;
+  font-style: italic;
+}
+#menu{
+  transform-origin: left;
+  transform: rotate(90deg);
+  left: 5%;
+  top: 25%;
+  position:fixed;
+}
+#imgcoffee{
+  margin-left: 50%;
+  margin-top: -35%;
+  display: none;
+}
+#imgeggs{
+  position: fixed;
+  top:85%;
+  left: 3%;
+}
+#twitter{
+ display: none;
+}
+#inst{
+  display: none;
+}
+#facebook{
+ display: none;
+}
+#text{
+  text-align: center;
+  padding-right: 100px;
+  padding-left: 90px;
+  margin-left: 20px;
+  font-size: 40px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  color: rgb(49, 49, 49);
+}
+
+#one{
+  margin-left: 20%;
+  margin-bottom: -16px;
+  position: relative;
+  z-index: 0;
+}
+#two{
+  margin-left:57%;
+  margin-top: -33%;
+  position: relative;
+  z-index: 0;
+}
+#three{
+  margin-left: 20%;
+  margin-bottom: -18px;
+}
+#text2{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  text-align: center;
+  font-size: 40px;
+  margin-left: 70px;
+  margin-right: 5px;
+}
+#six{
+  margin-left: 57%;
+  margin-top: -52%;
+}
+#five{
+  margin-left: 55.5%;
+  margin-top: 5%;
+}
+#nine{
+  margin-left: 23%;
+  margin-top: -52%;
+  margin-bottom: 18px;
+}
+#follow{
+  display: none;
+}
+#follow720{
+  display: none;
+}
+#followpc{
+  display: none;
+}
+footer{
+ width: 100%;
+ margin-bottom: 0;
+ display: block;
+}
+#grafik{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+}
+#TookCoffee{
+  margin-left:10%;
+  margin-top: 8%;
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+}
+#openinghours{
+ margin-left: 30%;
+ margin-top: -9%;
+}
+#addressfooter{
+  margin-left: 50%;
+  margin-top: -13.5%;
+}
+}
+
+@media screen and (max-width:1200px) and (min-width:720px)
+{
+  #form{
+    margin-left:30%;
+    margin-top: -8%;
+  }
+  #submitB{ 
+    border:none; 
+    padding:0; 
+    margin:0; 
+    font-size:20px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    font-family: 'Merriweather', serif; 
+    color:black; 
+    background-color:transparent; 
+    }
+  #upbutton {
+    background: url("D:/курсач/images/upbutton.png") no-repeat top left;
+    height: 64px;
+    width: 64px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+  }
+  .container {
+    margin:0 auto;
+    max-width: 720px;
+  }
+  /* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 37px;
+  left: 40px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 1;
+ 
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -12px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 12px;
+}
+
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 0px;
+  margin: 0;
+  padding: 50px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+  float: left;
+  display: block;
+  padding: 5px;
+  margin-right:-10px; /*Добавляем отступ у пунктов меню*/
+  margin-left: 90px;;
+  margin-top: -25px;
+  font-size: 25px;
+  font-family: Courier New, monospace;
+  color: rgb(0, 0, 0);
+  
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+/*---------------------------------------------*/
+#name{
+  margin-left: 10%;
+}
+#contacts{
+  margin-left: 80%;
+  margin-top: -7%;
+}
+
+.atook {
+  color: black;
+  font-size: 40px;
+  font-family: Bradley Hand, cursive;
+  text-decoration: none;
+  margin-left: 12%;
+}
+
+.aatook{
+  color: #616161;
+  font-size: 40px;
+  font-family: Palatino, URW Palladio L, serif;
+  font-style: italic;
+  text-decoration: none;
+}
+.aaatook{
+  text-decoration: none;
+  color: #616161;
+  font-size: 40px;
+  font-family: Palatino, URW Palladio L, serif;
+  font-style: italic;
+}
+#menu{
+  transform-origin: left;
+  transform: rotate(90deg);
+  left: 8%;
+  top: 25%;
+  position:fixed;
+}
+#imgcoffee{
+  margin-left: 50%;
+  margin-top: -35%;
+  display: none;
+}
+#imgeggs{
+  position: fixed;
+  top:85%;
+  left: 4%;
+}
+#twitter{
+ display: none;
+}
+#inst{
+  display: none;
+}
+#facebook{
+ display: none;
+}
+#text{
+  text-align: center;
+  padding-right: 80px;
+  padding-left: 90px;
+  margin-left: 50px;
+  font-size: 40px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  color: rgb(49, 49, 49);
+}
+#yummy{
+  margin-left: 10%;
+}
+#one{
+  margin-left: 10%;
+  margin-bottom: -18px;
+  position: relative;
+  z-index: 0;
+}
+#two{
+  margin-left:56%;
+  margin-top: -55%;
+  position: relative;
+  z-index: 0;
+}
+#three{
+  margin-left: 13%;
+  margin-bottom: -18px;
+}
+#text2{
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  text-align: center;
+  font-size: 40px;
+  margin-left: 70px;
+  margin-right: 5px;
+}
+#six{
+  margin-left: 62%;
+  margin-top: -52%;
+}
+#five{
+  margin-left: 55.5%;
+  margin-top: 5%;
+}
+#nine{
+  margin-left: 18%;
+  margin-top: -52%;
+  margin-bottom: 18px;
+}
+#follow{
+  display: none;
+}
+#followpc{
+  display: none;
+}
+#followtablet{
+  display: none;
+}
+#follow720{
+  margin-left: 5%;
+}
+footer{
+ width: 100%;
+ margin-bottom: 0;
+ display: block;
+}
+#grafik{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+}
+#TookCoffee{
+  margin-left:40%;
+  margin-top: 5%;
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+}
+#openinghours{
+ margin-left: 20%;
+ margin-top: 5%;
+}
+#addressfooter{
+  margin-left: 60%;
+  margin-top: -22%;
+}
+}

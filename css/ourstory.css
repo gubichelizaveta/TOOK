@@ -1,0 +1,1016 @@
+#name :hover{
+  color: rgb(56, 6, 194);
+  border-bottom: 1px double rgb(56, 6, 194);
+}
+#contacts :hover{
+  color: rgb(56, 6, 194);
+  border-bottom: 1px double rgb(56, 6, 194);
+}
+#menu :hover{
+  color: rgb(56, 6, 194);
+  border-bottom: 1px double rgb(56, 6, 194);
+}
+body{
+  background:rgb(177,178,253);
+}
+#upbutton {
+  background: url("D:/курсач/images/upbutton.png") no-repeat top left;
+  height: 64px;
+  width: 64px;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  z-index: 999;
+}
+
+@media screen and (max-width:1920px) and (min-width:1500px)
+{
+  #form{
+    margin-left:65%;
+    margin-top: -12%;
+  }
+  #submitB{ 
+    border:none; 
+    padding:0; 
+    margin:0; 
+    font-size:20px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    font-family: 'Merriweather', serif; 
+    color:black; 
+    background-color:transparent; 
+    }
+  .container {
+    max-width: 1600px;
+    margin: 0px auto;
+    padding: 0px 25px;
+  }
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 30px;
+  left: 40px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 1;
+ 
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -10px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 10px;
+}
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 0px;
+  margin: 0;
+  padding: 60px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+  float: left;
+  display: block;
+  padding: 8px;
+  margin-right:-220px; /*Добавляем отступ у пунктов меню*/
+  margin-left: 350px;;
+  margin-top: -25px;
+  font-size: 25px;
+  font-family: Courier New, monospace;
+  color: rgb(0, 0, 0);
+  
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+#name{
+  margin-left: 30%;
+}
+#contacts{
+  margin-left: 88%;
+  margin-top: -3%;
+}
+.atook {
+  color: black;
+  font-size: 40px;
+  font-family: Bradley Hand, cursive;
+  text-decoration: none;
+  margin-left: 12%;
+}
+
+.aatook{
+  color: #616161;
+  font-size: 40px;
+  font-family: Palatino, URW Palladio L, serif;
+  font-style: italic;
+  text-decoration: none;
+}
+.aaatook{
+  text-decoration: none;
+  color: #616161;
+  font-size: 40px;
+  font-family: Palatino, URW Palladio L, serif;
+  font-style: italic;
+}
+#menu{
+  transform-origin: left;
+  transform: rotate(90deg);
+  left: 4%;
+  top: 25%;
+  position:fixed;
+}
+#imgcoffee{
+  margin-left: 50%;
+  margin-top: -35%;
+  display: none;
+}
+#imgeggs{
+  position: fixed;
+  margin-top: 36%;
+  left: 2.5%;
+  
+}
+#twitter{
+  display: none;
+ }
+ #inst{
+   display: none;
+ }
+ #facebook{
+  display: none;
+ }
+ #ourstory
+ {
+   margin-left: 39.5%;
+ }
+ .hr{
+   display: none;
+ }
+ #textplace{
+  font-family: 'Open Sans Condensed', sans-serif; 
+  text-align: center; 
+  font-size: 35px; 
+  margin-left: 30px;
+  margin-right: 30px;
+}
+#our1{
+  font-size: 35px; 
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-left: 50%;
+  margin-top: 15%;
+}
+#our2{
+  font-size: 35px; 
+  font-family: 'Open Sans Condensed', sans-serif; 
+  margin-right: 60%;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+#our3{
+  font-size: 35px; 
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-left: 50%;
+  margin-top: 15%;
+  margin-right: 15%;
+}
+#our4{
+  font-size: 35px; 
+  font-family: 'Open Sans Condensed', sans-serif; 
+  margin-right: 60%;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+#ourstory1{
+  width: 480px;
+  height: 500px;
+  margin-left: 15%;
+  margin-top: -20%;
+}
+#ourstory2{
+  width: 480px;
+  height: 500px;
+  margin-left: 50%;
+  margin-top: -25%;
+}
+#ourstory3{
+  width: 480px;
+  height: 500px;
+  margin-left: 15%;
+  margin-top: -20%;
+}
+#ourstory4{
+  width: 480px;
+  height: 500px;
+  margin-left: 50%;
+  margin-top: -25%;
+}
+footer{
+  width: 100%;
+  margin-bottom: 0;
+  display: block;
+ }
+ #grafik{
+   font-family: 'Cormorant Garamond', serif;
+   font-size: 20px;
+ }
+ #TookCoffee{
+   margin-left:10%;
+   margin-top: 5%;
+   font-family: 'Merriweather', serif;
+   font-size: 30px;
+ }
+ #openinghours{
+   margin-left: 28%;
+  margin-top: -7%;
+ }
+ #addressfooter{
+   margin-left: 45%;
+   margin-top: -10.5%;
+ }
+}
+/*---------------АДАПТАЦИЯ----------------*/
+@media screen and (max-width:720px){
+  #form{
+    margin-left:18%;
+    margin-top: -12%;
+  }
+  #submitB{ 
+    border:none; 
+    padding:0; 
+    margin:0; 
+    font-size:20px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    font-family: 'Merriweather', serif; 
+    color:black; 
+    background-color:transparent; 
+    }
+  .container{
+    max-width: 460px;
+    margin: 0 auto;
+  }
+  #menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 28px;
+    left: 2%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 1;
+   
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -12px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 10px;
+  }
+  
+  /* контейнер меню */
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: -20px;
+    right: -90px;
+    left: -35px;
+    width: 35%;
+    height: 100%;
+   
+   
+    list-style: none;
+    text-align: center;
+    background-color: black;
+    opacity: 88%;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+  /* элементы меню */
+  .menu__item {
+    float: left;
+    display: block;
+    margin-left: 10%;
+    margin-top: 100px;
+    margin-bottom: -2em;
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Courier New, monospace;
+    color: white;
+    opacity: 95%;
+    text-align: center;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color:rgb(41, 40, 40);
+    
+  }
+  li :hover{
+    background-color: white;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .atook{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-family: Courier, monospace;
+    font-style: italic;
+    text-decoration: none;
+    margin: 85px;
+  }
+  .aatook{
+    display: none;
+  }
+  .aaatook{
+    display: none;
+  }
+  #imgcoffee{
+    display: none;
+  }
+  #imgeggs{
+    display: none;
+  }
+  #twitter{
+    margin-left:76%;
+    margin-top: -48px;
+    margin-bottom: 18px;
+  }
+  #inst{
+    margin-left: 5px;
+    margin-top: -60px;
+    margin-bottom: 18px;
+  }
+  #facebook{
+    margin-left: 92%;
+    margin-top: -70px;
+    margin-bottom: 37px;
+  }
+  #ourstory{
+    margin-left: 17%;
+    margin-bottom: 8%;
+  }
+  #textplace{
+    font-family: 'Open Sans Condensed', sans-serif; 
+    text-align: center; 
+    font-size: 35px; 
+    margin-left: 30px;
+  }
+  #our1{
+    font-size: 22px; 
+    margin-top: -20px; 
+    margin-left: 310px; 
+    margin-right: 8px; 
+    background-color: wheat; 
+    text-align: center;
+  }
+  #our2{
+    font-family: 'Open Sans Condensed'; 
+    font-weight: bold; 
+    text-align: left; 
+    background-color: PaleGreen; 
+    margin-right: 275px;
+    text-align: center; 
+    margin-left: 75px; 
+    margin-top:40px;
+  }
+  #our3{
+    font-size: 22px; 
+    margin-left: 300px; 
+    margin-top:35px; 
+    background-color: wheat; 
+    text-align: center;
+  }
+  #our4{
+    font-family: 'Open Sans Condensed'; 
+    font-weight: bold;
+    text-align: center; 
+    background-color: PaleGreen; 
+    margin-right: 275px; 
+    margin-left: 75px; 
+    margin-top:65px;
+  }
+  #ourstory1{
+    margin-left: 9%;
+    margin-top: -40%;
+    
+  }
+  #ourstory2{
+    margin-left: 45%;
+   margin-top: -39%;
+  }
+  #ourstory3{
+    margin-left: 9%;
+    margin-top: -34%;
+  }
+  #ourstory4{
+    margin-left: 45%;
+    margin-top: -35%;
+  }
+  #grafik{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  #open{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 15%;
+    font-size: 45px;
+  }
+  #followpc{
+    display: none;
+  }
+  #TookCoffee{
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+  }
+  #addressfooter{
+    text-align: center;
+    margin-top: 15%;
+  }
+}
+
+@media screen and (max-width:1500px) and (min-width:1200px)
+{
+  #form{
+    margin-left:75%;
+    margin-top: -15%;
+  }
+  #submitB{ 
+    border:none; 
+    padding:0; 
+    margin:0; 
+    font-size:20px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    font-family: 'Merriweather', serif; 
+    color:black; 
+    background-color:transparent; 
+    }
+  .container {
+    margin:0 auto;
+    max-width: 1200px;
+  }
+  /* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 30px;
+  left: 40px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 1;
+ 
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -10px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 10px;
+}
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 0px;
+  margin: 0;
+  padding: 60px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+  float: left;
+  display: block;
+  padding: 8px;
+  margin-right:-220px; /*Добавляем отступ у пунктов меню*/
+  margin-left: 300px;;
+  margin-top: -25px;
+  font-size: 25px;
+  font-family: Courier New, monospace;
+  color: rgb(0, 0, 0);
+  
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+#name{
+  margin-left: 30%;
+}
+#contacts{
+  margin-left: 85%;
+  margin-top: -4%;
+}
+.atook {
+  color: black;
+  font-size: 40px;
+  font-family: Bradley Hand, cursive;
+  text-decoration: none;
+  margin-left: 12%;
+}
+
+.aatook{
+  color: #616161;
+  font-size: 40px;
+  font-family: Palatino, URW Palladio L, serif;
+  font-style: italic;
+  text-decoration: none;
+}
+.aaatook{
+  text-decoration: none;
+  color: #616161;
+  font-size: 40px;
+  font-family: Palatino, URW Palladio L, serif;
+  font-style: italic;
+}
+#menu{
+  transform-origin: left;
+  transform: rotate(90deg);
+  left: 5%;
+  top: 25%;
+  position:fixed;
+}
+#imgcoffee{
+  margin-left: 50%;
+  margin-top: -35%;
+  display: none;
+}
+#imgeggs{
+  position: fixed;
+  margin-top: 45%;
+  left: 3%;
+  
+}
+#twitter{
+  display: none;
+ }
+ #inst{
+   display: none;
+ }
+ #facebook{
+  display: none;
+ }
+ #ourstory
+ {
+   margin-left: 37%;
+ }
+ .hr{
+   display: none;
+ }
+ #textplace{
+  font-family: 'Open Sans Condensed', sans-serif; 
+  text-align: center; 
+  font-size: 35px; 
+  margin-left: 85px;
+  margin-right: 25px;
+}
+#our1{
+  font-size: 35px; 
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-left: 60%;
+  margin-right: 5%;
+  margin-top: 10%;
+}
+#our2{
+  font-size: 35px; 
+  font-family: 'Open Sans Condensed', sans-serif; 
+  margin-right: 60%;
+  margin-left: 23%;
+  margin-top: 5%;
+}
+#our3{
+  font-size: 35px; 
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-left: 60%;
+  margin-top: 15%;
+  margin-right: 10%;
+}
+#our4{
+  font-size: 35px; 
+  font-family: 'Open Sans Condensed', sans-serif; 
+  margin-right: 60%;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+#ourstory1{
+  width: 480px;
+  height: 500px;
+  margin-left: 12%;
+  margin-top: -22%;
+}
+#ourstory2{
+  width: 480px;
+  height: 500px;
+  margin-left: 53%;
+  margin-top: -40%;
+}
+#ourstory3{
+  width: 480px;
+  height: 500px;
+  margin-left: 12%;
+  margin-top: -25%;
+}
+#ourstory4{
+  width: 480px;
+  height: 500px;
+  margin-left: 53%;
+  margin-top: -32%;
+}
+footer{
+  width: 100%;
+  margin-bottom: 0;
+  display: block;
+ }
+ #grafik{
+   font-family: 'Cormorant Garamond', serif;
+   font-size: 20px;
+ }
+ #TookCoffee{
+   margin-left:10%;
+   margin-top: 15%;
+   font-family: 'Merriweather', serif;
+   font-size: 30px;
+ }
+ #openinghours{
+   margin-left: 28%;
+  margin-top: -7.5%;
+ }
+ #addressfooter{
+   margin-left: 48%;
+   margin-top: -14%;
+ }
+}
+
+@media screen and (max-width:1200px) and (min-width:720px)
+{
+  #form{
+    margin-left:30%;
+    margin-top: -8%;
+  }
+  #submitB{ 
+    border:none; 
+    padding:0; 
+    margin:0; 
+    font-size:20px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    font-family: 'Merriweather', serif; 
+    color:black; 
+    background-color:transparent; 
+    }
+  .container {
+    margin:0 auto;
+    max-width: 720px;
+  }
+/* скрываем чекбокс */
+#menu__toggle {
+opacity: 0;
+}
+
+/* стилизуем кнопку */
+.menu__btn {
+display: flex; /* используем flex для центрирования содержимого */
+align-items: center;  /* центрируем содержимое кнопки */
+position: fixed;
+top: 30px;
+left: 40px;
+width: 36px;
+height: 36px;
+cursor: pointer;
+z-index: 1;
+
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+display: block;
+position: absolute;
+width: 100%;
+height: 4px;
+background-color: #616161;
+}
+.menu__btn > span::before {
+content: '';
+top: -10px;
+}
+.menu__btn > span::after {
+content: '';
+top: 10px;
+}
+/* контейнер меню */
+.menu__box {
+display: block;
+position: fixed;
+visibility: hidden;
+top: 0;
+left: -100%;
+width: 100%;
+height: 0px;
+margin: 0;
+padding: 60px 0;
+list-style: none;
+text-align: center;
+background-color: #ECEFF1;
+box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+float: left;
+display: block;
+padding: 5px;
+margin-right:-180px; /*Добавляем отступ у пунктов меню*/
+margin-left: 220px;;
+margin-top: -25px;
+font-size: 25px;
+font-family: Courier New, monospace;
+color: rgb(0, 0, 0);
+
+text-decoration: none;
+}
+.menu__item:hover {
+background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+top: 0;
+transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+top: 0;
+transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+visibility: visible;
+left: 0;
+}
+#name{
+margin-left: 15%;
+margin-top: -1%;
+}
+#contacts{
+margin-left: 78%;
+margin-top: -7%;
+}
+.atook {
+color: black;
+font-size: 40px;
+font-family: Bradley Hand, cursive;
+text-decoration: none;
+margin-left: 12%;
+}
+
+.aatook{
+color: #616161;
+font-size: 40px;
+font-family: Palatino, URW Palladio L, serif;
+font-style: italic;
+text-decoration: none;
+}
+.aaatook{
+text-decoration: none;
+color: #616161;
+font-size: 40px;
+font-family: Palatino, URW Palladio L, serif;
+font-style: italic;
+}
+#menu{
+transform-origin: left;
+transform: rotate(90deg);
+left: 8%;
+top: 25%;
+position:fixed;
+}
+#imgcoffee{
+margin-left: 50%;
+margin-top: -35%;
+display: none;
+}
+#imgeggs{
+position: fixed;
+margin-top: 75%;
+left: 4%;
+
+}
+#twitter{
+display: none;
+}
+#inst{
+ display: none;
+}
+#facebook{
+display: none;
+}
+#ourstory
+{
+ margin-left: 27%;
+}
+.hr{
+ display: none;
+}
+#textplace{
+font-family: 'Open Sans Condensed', sans-serif; 
+text-align: center; 
+font-size: 35px; 
+margin-left: 85px;
+margin-right: 25px;
+}
+#our1{
+font-size: 35px; 
+font-family: 'Open Sans Condensed', sans-serif;
+margin-left: 60%;
+margin-right: 5%;
+margin-top: 12%;
+}
+#our2{
+font-size: 35px; 
+font-family: 'Open Sans Condensed', sans-serif; 
+margin-right: 45%;
+margin-left: 18%;
+margin-top: 5%;
+}
+#our3{
+font-size: 35px; 
+font-family: 'Open Sans Condensed', sans-serif;
+margin-left: 65%;
+margin-top: 10%;
+margin-right: 2%;
+}
+#our4{
+font-size: 35px; 
+font-family: 'Open Sans Condensed', sans-serif; 
+margin-right: 45%;
+margin-left: 17%;
+margin-top: 10%;
+}
+#ourstory1{
+width: 300px;
+height: 318px;
+margin-left: 13%;
+margin-top: -34%;
+}
+#ourstory2{
+width: 300px;
+height: 318px;
+margin-left: 57%;
+margin-top: -55%;
+margin-bottom: 5%;
+}
+#ourstory3{
+width: 300px;
+height: 318px;
+margin-left: 13%;
+margin-top: -40%;
+}
+#ourstory4{
+width: 300px;
+height: 318px;
+margin-left: 57%;
+margin-top: -42%;
+}
+footer{
+width: 100%;
+margin-bottom: 0;
+display: block;
+}
+#grafik{
+ font-family: 'Cormorant Garamond', serif;
+ font-size: 20px;
+}
+#TookCoffee{
+ margin-left:40%;
+ margin-top: 10%;
+ font-family: 'Merriweather', serif;
+ font-size: 30px;
+}
+#openinghours{
+ margin-left: 20%;
+margin-top: 7%;
+}
+#addressfooter{
+ margin-left: 55%;
+ margin-top: -22.5%;
+}
+}

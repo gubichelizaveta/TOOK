@@ -1,0 +1,947 @@
+#upbutton {
+  background: url("D:/курсач/images/upbutton.png") no-repeat top left;
+  height: 64px;
+  width: 64px;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  z-index: 999;
+}
+#name :hover{
+  color: rgb(56, 6, 194);
+  border-bottom: 1px double rgb(56, 6, 194);
+}
+#contacts :hover{
+  color: rgb(56, 6, 194);
+  border-bottom: 1px double rgb(56, 6, 194);
+}
+#menu :hover{
+  color: rgb(56, 6, 194);
+  border-bottom: 1px double rgb(56, 6, 194);
+}
+body{
+  background-color: Bisque;
+}
+@media screen and (max-width:1500px) and (min-width:1200px)
+{
+  .container {
+    margin:0 auto;
+    max-width: 1200px;
+    
+  }
+  #map{
+    display: none;
+  }
+  #map1000{
+    margin-left: 9%;
+  }
+  #map520{
+    display: none;
+  }
+  #map1200{
+    display: none;
+  }
+  /* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 37px;
+  left: 40px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 1;
+ 
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -12px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 12px;
+}
+
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 0px;
+  margin: 0;
+  padding: 60px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+  float: left;
+  display: block;
+  padding: 8px;
+  margin-right:-220px; /*Добавляем отступ у пунктов меню*/
+  margin-left: 350px;;
+  margin-top: -25px;
+  font-size: 25px;
+  font-family: Courier New, monospace;
+  color: rgb(0, 0, 0);
+  
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+  header{
+    height: 70px;
+  }
+  #name{
+    margin-left: 20%;
+  }
+  #contacts{
+    margin-left: 82%;
+    margin-top: -4%;
+  }
+  
+  .atook {
+    color: black;
+    font-size: 40px;
+    font-family: Bradley Hand, cursive;
+    text-decoration: none;
+    margin-left: 12%;
+  }
+  
+  .aatook{
+    color: #616161;
+    font-size: 40px;
+    font-family: Palatino, URW Palladio L, serif;
+    font-style: italic;
+    text-decoration: none;
+  }
+  .aaatook{
+    text-decoration: none;
+    color: #616161;
+    font-size: 40px;
+    font-family: Palatino, URW Palladio L, serif;
+    font-style: italic;
+  }
+  #menu{
+    transform-origin: left;
+    transform: rotate(90deg);
+    left: 5%;
+    top: 25%;
+    position:fixed;
+  }
+
+  #imgcoffee{
+    display: none;
+  }
+  
+  #imgeggs{
+    position: fixed;
+    margin-top: 45%;
+    left: 3%;
+    
+  }
+  #twitter{
+   display: none;
+  }
+  #inst{
+    display: none;
+  }
+  #facebook{
+   display: none;
+  }
+  /*--------*/
+  #contactsinfo{
+    margin-left: 0%;
+    margin-top: 0;
+  }
+  #info1{
+    font-weight: normal;
+    margin-left: 20%;
+    margin-top: -3%;
+  }
+  #info2{
+    margin-left: 65%;
+    margin-top: -7.5%;
+    font-weight: normal;
+  }
+  #info3{
+    margin-left: 20%;
+    margin-top: 3.5%;
+    font-weight: normal;
+  }
+  #info4{
+    margin-left: 65%;
+    margin-top: -7%;
+    font-weight: normal;
+  }
+  #nameicons{
+    margin-left: 0%; 
+    margin-top: 0%;
+  }
+  #icons1{
+    font-size: 20px; 
+    margin-top: -21%;
+    margin-left: 20%; 
+    font-family: 'Oswald', sans-serif;
+  }
+  #icons2{
+    font-size: 20px; 
+    margin-top: -7%;
+    margin-left: 65%;
+    font-family: 'Oswald', sans-serif;
+  }
+  #icons3{
+    font-size: 20px;
+    margin-left: 20%;
+    margin-top: 3%;
+    font-family: 'Oswald', sans-serif;
+  }
+  #icons4{
+    font-size: 20px;
+    margin-top: -7.5%;
+    margin-left: 65%;
+    font-family: 'Oswald', sans-serif;
+  }
+  /*--------*/
+  #address{
+    margin-left: 12%;
+    margin-top: 5%;
+  }
+  #phone{
+    margin-left: 40%;
+    margin-top: 5%;
+  }
+  #email{
+    margin-left: -51.5%;
+    margin-top: 5%;
+    margin-bottom: -10%;
+  }
+  #hour{
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: -10%;
+  }
+}
+@media screen and (max-width:1200px) and (min-width:720px)
+{
+  .container {
+    margin:0 auto;
+    max-width: 720px;
+  }
+  #map520{
+    margin-left: 17%;
+    margin-top: 5%;
+  }
+  #map1000{
+    display: none;
+  }
+  #map{
+    display: none;
+  }
+  #map1200{
+    display: none;
+  }
+  /* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 37px;
+  left: 40px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 1;
+ 
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -12px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 12px;
+}
+
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 0px;
+  margin: 0;
+  padding: 60px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+  float: left;
+  display: block;
+  padding: 8px;
+  margin-right:-150px; /*Добавляем отступ у пунктов меню*/
+  margin-left: 180px;;
+  margin-top: -25px;
+  font-size: 25px;
+  font-family: Courier New, monospace;
+  color: rgb(0, 0, 0);
+  
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+  header{
+    height: 70px;
+  }
+  #name{
+    margin-left: 20%;
+  }
+  #contacts{
+    margin-left: 80%;
+    margin-top: -7%;
+  }
+  
+  .atook {
+    color: black;
+    font-size: 40px;
+    font-family: Bradley Hand, cursive;
+    text-decoration: none;
+    margin-left: 12%;
+  }
+  
+  .aatook{
+    color: #616161;
+    font-size: 40px;
+    font-family: Palatino, URW Palladio L, serif;
+    font-style: italic;
+    text-decoration: none;
+  }
+  .aaatook{
+    text-decoration: none;
+    color: #616161;
+    font-size: 40px;
+    font-family: Palatino, URW Palladio L, serif;
+    font-style: italic;
+  }
+  #menu{
+    transform-origin: left;
+    transform: rotate(90deg);
+    left: 8%;
+    top: 25%;
+    position:fixed;
+  }
+
+  #imgcoffee{
+    display: none;
+  }
+  
+  #imgeggs{
+    position: fixed;
+    margin-top: 65%;
+    left: 5%;
+    
+  }
+  #twitter{
+   display: none;
+  }
+  #inst{
+    display: none;
+  }
+  #facebook{
+   display: none;
+  }
+  /*--------*/
+  #contactsinfo{
+    margin-left: 0%;
+    margin-top: 0;
+  }
+  #info1{
+    font-weight: normal;
+    margin-left: 24%;
+    margin-top: -5%;
+  }
+  #info2{
+    margin-left: 78%;
+    margin-top: -12%;
+    font-weight: normal;
+  }
+  #info3{
+    margin-left: 25%;
+    margin-top: 9%;
+    font-weight: normal;
+  }
+  #info4{
+    margin-left: 78%;
+    margin-top: -12%;
+    font-weight: normal;
+  }
+  #nameicons{
+    margin-left: 0%; 
+    margin-top: 0%;
+  }
+  #icons1{
+    font-size: 20px; 
+    margin-top: -39%;
+    margin-left: 24%; 
+    font-family: 'Oswald', sans-serif;
+  }
+  #icons2{
+    font-size: 20px; 
+    margin-top: -11%;
+    margin-left: 78%;
+    font-family: 'Oswald', sans-serif;
+  }
+  #icons3{
+    font-size: 20px;
+    margin-left: 25%;
+    margin-top: 8% ;
+    font-family: 'Oswald', sans-serif;
+  }
+  #icons4{
+    font-size: 20px;
+    margin-top: -12%;
+    margin-left: 78%;
+    font-family: 'Oswald', sans-serif;
+  }
+  /*--------*/
+  #address{
+    margin-left: 14%;
+    margin-top: 5%;
+  }
+  #phone{
+    margin-left: 44%;
+    margin-top: 5%;
+  }
+  #email{
+    margin-left: -63%;
+    margin-top: 5%;
+    margin-bottom: -20%;
+  }
+  #hour{
+    margin-left: 44%;
+    margin-top: 5%;
+    margin-bottom: -20%;
+  }
+}
+@media screen and (max-width:1920px) and (min-width:1500px)
+ {
+  .container {
+    max-width: 1600px;
+    margin: 0px auto;
+    padding: 0px 25px;
+  }
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 37px;
+  left: 40px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 1;
+ 
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -12px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 12px;
+}
+
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 0px;
+  margin: 0;
+  padding: 60px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+/* элементы меню */
+.menu__item {
+  float: left;
+  display: block;
+  padding: 8px;
+  margin-right:-220px; /*Добавляем отступ у пунктов меню*/
+  margin-left: 350px;;
+  margin-top: -25px;
+  font-size: 25px;
+  font-family: Courier New, monospace;
+  color: rgb(0, 0, 0);
+  
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+  header{
+    height: 70px;
+  }
+  #name{
+    margin-left: 30%;
+  }
+  #contacts{
+    margin-left: 88%;
+    margin-top: -3%;
+  }
+  
+  .atook {
+    color: black;
+    font-size: 40px;
+    font-family: Bradley Hand, cursive;
+    text-decoration: none;
+    margin-left: 12%;
+  }
+  
+  .aatook{
+    color: #616161;
+    font-size: 40px;
+    font-family: Palatino, URW Palladio L, serif;
+    font-style: italic;
+    text-decoration: none;
+  }
+  .aaatook{
+    text-decoration: none;
+    color: #616161;
+    font-size: 40px;
+    font-family: Palatino, URW Palladio L, serif;
+    font-style: italic;
+  }
+  #menu{
+    transform-origin: left;
+    transform: rotate(90deg);
+    left: 4%;
+    top: 25%;
+    position:fixed;
+  }
+
+  #imgcoffee{
+    display: none;
+  }
+  
+  #imgeggs{
+    position: fixed;
+    margin-top: 36%;
+    left: 2.5%;
+    
+  }
+  #twitter{
+   display: none;
+  }
+  #inst{
+    display: none;
+  }
+  #facebook{
+   display: none;
+  }
+  /*--------*/
+  #contactsinfo{
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+  #info1{
+    font-weight: normal;
+    margin-left: 12%;
+    margin-top: -2.5%;
+  }
+  #info2{
+    margin-left: 40%;
+    margin-top: -5%;
+    font-weight: normal;
+  }
+  #info3{
+    margin-left: 60%;
+    margin-top: -6%;
+    font-weight: normal;
+  }
+  #info4{
+    margin-left: 80%;
+    margin-top: -6%;
+    font-weight: normal;
+  }
+  #nameicons{
+    margin-left: 0%; 
+    margin-top: 0%;
+  }
+  #icons1{
+    font-size: 20px; 
+    margin-top: -7.5%;
+    margin-left: 12%; 
+    font-family: 'Oswald', sans-serif;
+  }
+  #icons2{
+    font-size: 20px; 
+    margin-top: -5%;
+    margin-left: 40%;
+    font-family: 'Oswald', sans-serif;
+  }
+  #icons3{
+    font-size: 20px;
+    margin-left: 60%;
+    margin-top:-5% ;
+    font-family: 'Oswald', sans-serif;
+  }
+  #icons4{
+    font-size: 20px;
+    margin-top: -6.5%;
+    margin-left: 80%;
+    font-family: 'Oswald', sans-serif;
+  }
+  /*--------*/
+  #address{
+    margin-left: 7%;
+    margin-top: 5%;
+  }
+  #phone{
+    margin-left: 23%;
+    margin-top: 5%;
+  }
+  #email{
+    margin-left: 15%;
+    margin-top: 5%;
+  }
+  #hour{
+    margin-left: 15%;
+    margin-top: 5%;
+  }
+  #map{
+    display: none;
+  }
+  #map1200{
+    margin-left: 10%;
+  }
+  #map1000{
+    display: none;
+  }
+  #map520{
+    display: none;
+  }
+ }
+@media screen and (max-width:720px){
+  .container{
+    max-width: 470px;
+    margin: 0 auto;
+  }
+  #menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 28px;
+    left: 2%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 2;
+   
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -12px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 10px;
+  }
+  
+  /* контейнер меню */
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: -20px;
+    right: -90px;
+    left: -35px;
+    width: 35%;
+    height: 100%;
+   
+    z-index: 1;
+    list-style: none;
+    text-align: center;
+    background-color: black;
+    opacity: 88%;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+  /* элементы меню */
+  .menu__item {
+    float: left;
+    display: block;
+    margin-left: 10%;
+    margin-top: 100px;
+    margin-bottom: -2em;
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Courier New, monospace;
+    color: white;
+    opacity: 95%;
+    text-align: center;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color:rgb(41, 40, 40);
+    
+  }
+  li :hover{
+    background-color: white;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  header{
+    height: 70px;
+  }
+  .atook{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-family: Courier, monospace;
+    font-style: italic;
+    text-decoration: none;
+    margin: 85px;
+  }
+  .aatook{
+    display: none;
+  }
+  .aaatook{
+    display: none;
+  }
+  #imgcoffee{
+    display: none;
+  }
+  #imgeggs{
+    display: none;
+  }
+  #twitter{
+    margin-left:76%;
+    margin-top: -48px;
+    margin-bottom: 18px;
+  }
+  #inst{
+    margin-left: 5px;
+    margin-top: -60px;
+    margin-bottom: 18px;
+  }
+  #facebook{
+    margin-left: 92%;
+    margin-top: -70px;
+    margin-bottom: 37px;
+  }
+  #address{
+    margin-top: 10%;
+    margin-left: 8%;
+    margin-bottom:60%;
+  }
+  #phone{
+    margin-top: 25%;
+    margin-left: -15%;
+    margin-bottom: 40%;
+  }
+  #email{
+    margin-top: 15%;
+    margin-left: -14.5%;
+    margin-bottom: 20%;
+  }
+  #hour{
+    margin-bottom:3%;
+    margin-left: -14.5%;
+    margin-bottom: 0%;
+  }
+  #contactsinfo{
+    margin-left: 28%;
+    margin-top: -73%;
+  }
+  #info1{
+    font-weight: normal;
+  }
+  #info2{
+    margin-top: 7%;
+    font-weight: normal;
+  }
+  #info3{
+    margin-top: -2%;
+    font-weight: normal;
+  }
+  #info4{
+    margin-top: 10%;
+    font-weight: normal;
+  }
+  #nameicons{
+    margin-left: 28%; 
+    margin-top: -92%;
+  }
+  #icons1{
+    font-size: 20px; 
+    margin-top: 14%; 
+    font-family: 'Oswald', sans-serif;
+  }
+  #icons2{
+    font-size: 20px; 
+    margin-top: 3%;
+    font-family: 'Oswald', sans-serif;
+  }
+  #icons3{
+    font-size: 20px;
+    margin-top: 3%;
+    font-family: 'Oswald', sans-serif;
+  }
+  #icons4{
+    font-size: 20px;
+    margin-top: 1%;
+    font-family: 'Oswald', sans-serif;
+  }
+  #map{
+    margin-left: 3%;
+    margin-top: 10%;
+    z-index: -1;
+  }
+  #map1200{
+    display: none;
+  }
+  #map1000{
+    display: none;
+  }
+  #map520{
+    display: none;
+  }
+}
